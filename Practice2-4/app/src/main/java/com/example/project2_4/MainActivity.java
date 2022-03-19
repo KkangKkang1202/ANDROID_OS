@@ -15,9 +15,12 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.icon);
+
         button1 = (Button) findViewById(R.id.button1);
 
-        button1.setOnClickListener(view -> Toast.makeText(getApplicationContext(), "버튼을 눌렀어요"
+        button1.setOnClickListener(view -> Toast.makeText(getApplicationContext(), "2020039048 김강민"
         , Toast.LENGTH_SHORT).show());
     }
 }
