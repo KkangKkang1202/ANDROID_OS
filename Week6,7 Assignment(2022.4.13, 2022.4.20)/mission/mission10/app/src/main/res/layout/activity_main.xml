@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="바로가기"
+        android:textSize="20sp"
+        android:id="@+id/GoButton"
+        android:layout_gravity="right">
+
+    </Button>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@android:id/tabhost"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@android:id/tabcontent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#33ffcc"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Fragment1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴1"
+                        android:textSize="20sp"
+                        android:id="@+id/Menu1_Button"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020039048 김강민"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="100dp">
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffd033"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Fragment2">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴2"
+                        android:textSize="20sp"
+                        android:id="@+id/Menu2_Button"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020039048 김강민"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="100dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffcccc"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/Fragment3">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="메뉴3"
+                        android:textSize="20sp"
+                        android:id="@+id/Menu3_Button"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="100dp"
+                        >
+                    </Button>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020039048 김강민"
+                        android:textSize="25sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="100dp">
+                    </TextView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <TabWidget
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs">
+            </TabWidget>
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>
